@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yash Chourasia | Data Scientist & ML Engineer</title>
+
+  <title>Yash Chourasia | Applied ML Engineer & Backend Developer</title>
+  <meta name="description" content="Yash Chourasia is an Applied ML and backend-focused MSc Advanced Computer Science student at the University of Leicester, building scalable APIs, BI dashboards, XAI research pipelines, and full-stack applications." />
+  <meta name="keywords" content="Yash Chourasia, Applied ML Engineer, Backend Developer, Python, FastAPI, PyTorch, Power BI, Microsoft Fabric, Data Scientist, Software Engineer, University of Leicester" />
+  <meta name="author" content="Yash Chourasia" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
   <style>
     :root {
       --bg: #f7f8fc;
@@ -21,14 +27,21 @@
       --success: #047857;
       --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
       --radius: 18px;
-      --radius-sm: 12px;
       --container: 1120px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.65;
@@ -36,31 +49,32 @@
       overflow-x: hidden;
     }
 
-    a { color: inherit; }
-    img { max-width: 100%; display: block; }
+    a {
+      color: inherit;
+    }
 
     .container {
       width: min(var(--container), calc(100% - 2rem));
       margin: 0 auto;
     }
 
+    .section {
+      padding: 5.5rem 0;
+    }
+
     .eyebrow {
       display: inline-block;
       font-size: 0.76rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--primary);
       margin-bottom: 0.8rem;
     }
 
-    .section {
-      padding: 5.5rem 0;
-    }
-
     .section-head {
-      margin-bottom: 2.5rem;
-      max-width: 720px;
+      margin-bottom: 2.4rem;
+      max-width: 760px;
     }
 
     .section-head.center {
@@ -81,7 +95,7 @@
     .section-subtitle {
       color: var(--muted);
       font-size: 1rem;
-      max-width: 640px;
+      max-width: 680px;
     }
 
     .card {
@@ -91,7 +105,6 @@
       box-shadow: var(--shadow);
     }
 
-    /* Nav */
     .nav-shell {
       position: sticky;
       top: 0;
@@ -147,7 +160,7 @@
       list-style: none;
       display: flex;
       align-items: center;
-      gap: 1.6rem;
+      gap: 1.4rem;
       flex-wrap: wrap;
     }
 
@@ -178,7 +191,6 @@
       font-weight: 700;
     }
 
-    /* Hero */
     .hero {
       padding: 5rem 0 3.5rem;
     }
@@ -238,7 +250,7 @@
       font-size: 1.08rem;
       line-height: 1.75;
       color: var(--muted);
-      max-width: 62ch;
+      max-width: 66ch;
       margin-bottom: 1.5rem;
     }
 
@@ -314,13 +326,6 @@
       color: rgba(255,255,255,0.9);
     }
 
-    .hero-value {
-      font-size: 2.2rem;
-      font-weight: 800;
-      line-height: 1;
-      margin-bottom: 0.35rem;
-    }
-
     .hero-side p,
     .hero-side li,
     .hero-side a {
@@ -346,14 +351,19 @@
       border: 1px solid rgba(255,255,255,0.09);
     }
 
+    .hero-value {
+      font-size: 2.1rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+
     .hero-kpi span {
       display: block;
       font-size: 0.82rem;
       color: rgba(255,255,255,0.65);
-      margin-top: 0.35rem;
     }
 
-    /* About */
     .about-grid {
       display: grid;
       grid-template-columns: 0.95fr 1.05fr;
@@ -413,6 +423,7 @@
 
     .profile-list strong {
       color: var(--accent);
+      text-align: right;
     }
 
     .about-card p {
@@ -447,7 +458,6 @@
       color: var(--muted);
     }
 
-    /* Skills */
     .skill-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -465,13 +475,15 @@
       margin-bottom: 1rem;
     }
 
-    .skill-list {
+    .skill-list,
+    .project-stack {
       display: flex;
       flex-wrap: wrap;
       gap: 0.55rem;
     }
 
-    .skill-pill {
+    .skill-pill,
+    .project-stack span {
       padding: 0.48rem 0.75rem;
       border-radius: 999px;
       background: var(--surface-2);
@@ -481,7 +493,6 @@
       font-weight: 600;
     }
 
-    /* Timeline */
     .timeline {
       position: relative;
       margin-top: 1rem;
@@ -565,7 +576,7 @@
     }
 
     .timeline-list li::before {
-      content: "â¢";
+      content: "•";
       position: absolute;
       left: 0;
       top: 0;
@@ -573,7 +584,6 @@
       font-weight: 800;
     }
 
-    /* Projects */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -602,6 +612,12 @@
       line-height: 1.3;
     }
 
+    .project-subtitle {
+      color: var(--primary);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
     .project-label {
       padding: 0.45rem 0.65rem;
       border-radius: 999px;
@@ -616,22 +632,6 @@
     .project-desc {
       color: var(--muted);
       font-size: 0.93rem;
-    }
-
-    .project-stack {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem;
-    }
-
-    .project-stack span {
-      padding: 0.42rem 0.7rem;
-      border-radius: 999px;
-      background: var(--surface-2);
-      border: 1px solid var(--line);
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 600;
     }
 
     .project-result {
@@ -660,7 +660,6 @@
       color: var(--primary);
     }
 
-    /* Certs */
     .cert-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -690,7 +689,6 @@
       font-weight: 700;
     }
 
-    /* Contact */
     .contact-card {
       padding: 2.4rem;
       display: grid;
@@ -856,9 +854,14 @@
         flex-direction: column;
         align-items: flex-start;
       }
+
+      .profile-list strong {
+        text-align: left;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="nav-shell">
     <div class="container">
@@ -867,7 +870,7 @@
           <div class="brand-mark">YC</div>
           <div class="brand-text">
             <strong>Yash Chourasia</strong>
-            <span>Data Scientist & ML Engineer</span>
+            <span>Applied ML Engineer & Backend Developer</span>
           </div>
         </a>
 
@@ -876,6 +879,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -890,45 +894,59 @@
       <div class="container">
         <div class="hero-wrap">
           <div class="hero-main card fade">
-            <div class="status-pill">Open to graduate roles in Backend Dev, Data Science &amp; ML</div>
-            <h1>Yash <span>Chourasia</span></h1>
+            <div class="status-pill">Open to software engineering, backend, data science and applied AI/ML roles</div>
+
+            <h1>Applied ML Engineer <span>& Backend Developer</span></h1>
+
             <p class="hero-lead">
-              MSc Advanced Computer Science (with Industry) student at the University of Leicester, seeking graduate roles in Backend Development, Data Science, or Machine Learning. Experienced in Python, full-stack development, ML, BI dashboards, and applied AI systems.
+              MSc Advanced Computer Science student at the University of Leicester, building scalable backend systems,
+              explainable AI pipelines, BI dashboards, and full-stack applications using Python, FastAPI, PyTorch,
+              Power BI, React.js, Node.js, and MySQL.
             </p>
+
             <div class="hero-meta">
-              <div class="meta-chip">Leicester, UK</div>
-              <div class="meta-chip">Python, Power BI, SQL</div>
-              <div class="meta-chip">+44-7425748404</div>
-              <div class="meta-chip">Available for full-time and placement roles</div>
+              <div class="meta-chip">London, United Kingdom</div>
+              <div class="meta-chip">Python · FastAPI · PyTorch</div>
+              <div class="meta-chip">Power BI · Microsoft Fabric · SQL</div>
+              <div class="meta-chip">Target: Graduate and entry-level roles</div>
             </div>
+
             <div class="hero-actions">
-              <a href="mailto:yashchourasia1111@gmail.com" class="btn btn-primary">Email me</a>
-              <a href="#projects" class="btn btn-secondary">View projects</a>
-              <a href="https://linkedin.com/in/yashchourasia-cs" target="_blank" class="btn btn-secondary">LinkedIn</a>
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="Yash-Chourasia-CV.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+              <a href="mailto:yashchourasia1111@gmail.com" class="btn btn-secondary">Contact Me</a>
+              <a href="https://github.com/yash1-coder/yash1-coder" target="_blank" class="btn btn-secondary">GitHub</a>
             </div>
           </div>
 
           <aside class="hero-side card fade">
             <div class="hero-summary">
               <h2>Profile snapshot</h2>
-              <p>Focused on practical analytics, machine learning systems, and business-facing dashboards rather than flashy demo work.</p>
+              <p>
+                Applied ML and backend-focused graduate profile with practical experience across BI delivery,
+                machine learning pipelines, XAI research, REST APIs, and full-stack applications.
+              </p>
             </div>
+
             <div class="hero-kpis">
               <div class="hero-kpi">
-                <div class="hero-value">6+</div>
-                <span>ML models built</span>
+                <div class="hero-value">5</div>
+                <span>Power BI dashboards delivered</span>
               </div>
+
               <div class="hero-kpi">
-                <div class="hero-value">4+</div>
-                <span>Production-style projects</span>
+                <div class="hero-value">6</div>
+                <span>ML algorithms evaluated</span>
               </div>
+
               <div class="hero-kpi">
-                <div class="hero-value">3+</div>
-                <span>Years coding</span>
+                <div class="hero-value">85%</div>
+                <span>Detection accuracy in cyber-attack project</span>
               </div>
+
               <div class="hero-kpi">
-                <div class="hero-value">11+</div>
-                <span>Certifications</span>
+                <div class="hero-value">2026</div>
+                <span>MSc expected completion</span>
               </div>
             </div>
           </aside>
@@ -940,8 +958,10 @@
       <div class="container">
         <div class="section-head center fade">
           <span class="eyebrow">About</span>
-          <h2 class="section-title">Clear profile. No noise.</h2>
-          <p class="section-subtitle">The original version tried too hard visually. This version puts the focus back on credibility, clarity, and hiring relevance.</p>
+          <h2 class="section-title">Applied ML, backend systems and business-facing analytics.</h2>
+          <p class="section-subtitle">
+            A focused portfolio for recruiters looking for Python, backend, AI/ML, data and BI capability.
+          </p>
         </div>
 
         <div class="about-grid">
@@ -950,43 +970,58 @@
               <div class="avatar">YC</div>
               <div>
                 <div class="profile-name">Yash Chourasia</div>
-                <div class="profile-role">Data Scientist | ML Engineer | MSc Advanced CS (with Industry)</div>
+                <div class="profile-role">MSc Advanced Computer Science · University of Leicester</div>
               </div>
             </div>
+
             <ul class="profile-list">
-              <li><span>Location</span><strong>Leicester, UK</strong></li>
+              <li><span>Location</span><strong>London, UK</strong></li>
               <li><span>Email</span><strong>yashchourasia1111@gmail.com</strong></li>
-              <li><span>Focus</span><strong>Analytics, ML, BI</strong></li>
-              <li><span>Availability</span><strong>Full-time, placement, remote</strong></li>
+              <li><span>Phone</span><strong>+44 7425 748404</strong></li>
+              <li><span>Focus</span><strong>Backend, ML, XAI, BI</strong></li>
+              <li><span>Target roles</span><strong>Software Engineer · Backend Developer · Data Scientist</strong></li>
             </ul>
           </div>
 
           <div class="about-card card fade">
             <p>
-              I am currently pursuing an MSc in Advanced Computer Science (with Industry) at the University of Leicester, with a focus on data science, machine learning, and AI.
+              I am an Applied ML and backend-focused MSc Advanced Computer Science student at the University of Leicester.
+              My work sits across Python backend development, machine learning systems, explainable AI, BI pipelines,
+              and full-stack web applications.
             </p>
+
             <p>
-              At SoftSensor.ai, I worked on Power BI dashboards integrated with Microsoft Fabric for Protiviti, helping support real-time sales reporting and business decision-making.
+              At SoftSensor AI, I delivered BI and analytics solutions for a Dubai-based client, including 5 Power BI
+              dashboards backed by Microsoft Fabric pipelines. The work replaced fragmented manual reporting with
+              live dashboards for sales performance tracking and operational decision-making.
             </p>
+
             <p>
-              My work spans machine learning pipelines, business intelligence, Python analytics, REST APIs, and full-stack builds. I care more about solving useful problems and shipping solid work than making something look flashy.
+              My project background includes XAI research for satellite image classification, ML-based cyber-attack
+              detection for cyber-physical systems, and a full-stack e-commerce platform with an integrated AI chatbot.
+              I am targeting entry-level roles where I can build practical software, backend systems, data products,
+              and applied AI/ML solutions.
             </p>
+
             <div class="highlights">
               <div class="highlight">
-                <strong>Business analytics</strong>
-                <span>Power BI dashboards and reporting workflows tied to real stakeholder needs.</span>
+                <strong>Backend engineering</strong>
+                <span>FastAPI, Flask, REST APIs, MySQL, Firebase and full-stack application delivery.</span>
               </div>
+
               <div class="highlight">
-                <strong>Machine learning</strong>
-                <span>Classification pipelines, evaluation, and model comparison using Python tools.</span>
+                <strong>Applied ML and XAI</strong>
+                <span>PyTorch, scikit-learn, TensorFlow, Grad-CAM, Integrated Gradients and SmoothGrad.</span>
               </div>
+
               <div class="highlight">
-                <strong>Engineering</strong>
-                <span>APIs, web apps, structured code, and end-to-end delivery across projects.</span>
+                <strong>Data and BI</strong>
+                <span>Power BI, Microsoft Fabric, SQL, dashboards, BI pipelines and reporting models.</span>
               </div>
+
               <div class="highlight">
-                <strong>Career target</strong>
-                <span>UK-based data science or ML engineering role with real ownership and growth.</span>
+                <strong>Application areas</strong>
+                <span>Remote sensing, cyber-attack detection, e-commerce, AI chatbots and business intelligence.</span>
               </div>
             </div>
           </div>
@@ -998,55 +1033,84 @@
       <div class="container">
         <div class="section-head fade">
           <span class="eyebrow">Skills</span>
-          <h2 class="section-title">Relevant tools, grouped properly</h2>
-          <p class="section-subtitle">This is cleaner because recruiters do not want decorative cards. They want signal fast.</p>
+          <h2 class="section-title">Technical skills grouped for recruiter scanning.</h2>
+          <p class="section-subtitle">
+            The strongest keywords are Python, FastAPI, PyTorch, Power BI, Microsoft Fabric, SQL, React.js, Node.js,
+            Flask, MySQL, XAI and REST APIs.
+          </p>
         </div>
 
         <div class="skill-grid">
           <div class="skill-card card fade">
-            <h3>Machine Learning</h3>
+            <h3>Programming</h3>
             <div class="skill-list">
               <span class="skill-pill">Python</span>
-              <span class="skill-pill">scikit-learn</span>
-              <span class="skill-pill">TensorFlow</span>
-              <span class="skill-chip">PyTorch</span>
-              <span class="skill-pill">Keras</span>
-              <span class="skill-pill">Random Forest</span>
-              <span class="skill-pill">SVM</span>
-              <span class="skill-pill">AdaBoost</span>
-              <span class="skill-pill">Neural Networks</span>
-            </div>
-          </div>
-
-          <div class="skill-card card fade">
-            <h3>Data & BI</h3>
-            <div class="skill-list">
-              <span class="skill-pill">Power BI</span>
-              <span class="skill-pill">Microsoft Fabric</span>
-              <span class="skill-pill">Pandas</span>
-              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Java</span>
               <span class="skill-pill">SQL</span>
-              <span class="skill-chip">MySQL</span>
-              <span class="skill-pill">EDA</span>
-              <span class="skill-pill">Matplotlib</span>
-              <span class="skill-pill">Tableau</span>
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">Flutter</span>
             </div>
           </div>
 
           <div class="skill-card card fade">
-            <h3>Development & Tools</h3>
+            <h3>Backend and Web</h3>
             <div class="skill-list">
               <span class="skill-pill">FastAPI</span>
               <span class="skill-pill">Flask</span>
+              <span class="skill-pill">Node.js</span>
               <span class="skill-pill">REST APIs</span>
-              <span class="skill-pill">React</span>
-              <span class="skill-chip">Java</span>
-              <span class="skill-chip">Flutter</span>
+              <span class="skill-pill">Firebase</span>
+              <span class="skill-pill">Full-stack Development</span>
+              <span class="skill-pill">MySQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card card fade">
+            <h3>AI, ML and XAI</h3>
+            <div class="skill-list">
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">scikit-learn</span>
+              <span class="skill-pill">TensorFlow</span>
+              <span class="skill-pill">Grad-CAM</span>
+              <span class="skill-pill">Grad-CAM++</span>
+              <span class="skill-pill">Integrated Gradients</span>
+              <span class="skill-pill">SmoothGrad</span>
+            </div>
+          </div>
+
+          <div class="skill-card card fade">
+            <h3>Data and BI</h3>
+            <div class="skill-list">
+              <span class="skill-pill">Power BI</span>
+              <span class="skill-pill">Microsoft Fabric</span>
+              <span class="skill-pill">Dashboarding</span>
+              <span class="skill-pill">BI Pipelines</span>
+              <span class="skill-pill">Data Visualisation</span>
+              <span class="skill-pill">Jupyter Notebook</span>
+            </div>
+          </div>
+
+          <div class="skill-card card fade">
+            <h3>Tools and Platforms</h3>
+            <div class="skill-list">
               <span class="skill-pill">Git</span>
               <span class="skill-pill">GitHub</span>
-              <span class="skill-pill">PostgreSQL</span>
-              <span class="skill-chip">Jupyter Notebook</span>
-              <span class="skill-pill">Azure</span>
+              <span class="skill-pill">Android Studio</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Agile Collaboration</span>
+            </div>
+          </div>
+
+          <div class="skill-card card fade">
+            <h3>Languages</h3>
+            <div class="skill-list">
+              <span class="skill-pill">English: Fluent</span>
+              <span class="skill-pill">Hindi: Native</span>
+              <span class="skill-pill">Gujarati: Conversational</span>
+              <span class="skill-pill">Marathi: Conversational</span>
             </div>
           </div>
         </div>
@@ -1057,7 +1121,7 @@
       <div class="container">
         <div class="section-head fade">
           <span class="eyebrow">Experience</span>
-          <h2 class="section-title">Experience and education without the clutter</h2>
+          <h2 class="section-title">Experience focused on business data delivery.</h2>
         </div>
 
         <div class="timeline">
@@ -1065,78 +1129,18 @@
             <div class="timeline-card card">
               <div class="timeline-top">
                 <div>
-                  <div class="timeline-title">Member of Leicester 100</div>
-                  <div class="timeline-org">University of Leicester</div>
+                  <div class="timeline-title">Data Scientist</div>
+                  <div class="timeline-org">SoftSensor AI · Delhi, India</div>
                 </div>
-                <div class="timeline-date">Oct 2025 - Present</div>
+                <div class="timeline-date">Jan 2024 - Dec 2024</div>
               </div>
-              <ul class="timeline-list">
-                <li>Selected for a university leadership and engagement programme.</li>
-                <li>Contributed to student representation and strategic discussion.</li>
-              </ul>
-            </div>
-          </article>
 
-          <article class="timeline-item fade">
-            <div class="timeline-card card">
-              <div class="timeline-top">
-                <div>
-                  <div class="timeline-title">Data Science Intern</div>
-                  <div class="timeline-org">SoftSensor.ai</div>
-                </div>
-                <div class="timeline-date">Oct 2024 - Dec 2024</div>
-              </div>
               <ul class="timeline-list">
-                <li>Designed and delivered 5 interactive Power BI dashboards backed by Microsoft Fabric pipelines, integrating multi-source operational data into unified, auto-refreshing views.</li>
-                <li>Eliminated manual reporting cycles entirely, enabling real-time decision-making across product and operations teams with zero recurring analyst overhead.</li>
-                <li>Performed exploratory data analysis in Python on stakeholder datasets and supported cross-functional Agile delivery.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item fade">
-            <div class="timeline-card card">
-              <div class="timeline-top">
-                <div>
-                  <div class="timeline-title">MSc Advanced Computer Science (with Industry)</div>
-                  <div class="timeline-org">University of Leicester</div>
-                </div>
-                <div class="timeline-date">Jan 2025 - Present</div>
-              </div>
-              <ul class="timeline-list">
-                <li>Focused on computer science, data science, and AI-related work.</li>
-                <li>Relevant study includes analytics and applied computing topics.</li>
-                <li>Dissertation: Colouring Black Boxes, visualisation of AI decision-making.</li>
-              </ul>
-            </div>
-          </article>
-
-                    <article class="timeline-entry fade">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-role">Skill Development Cell Intern</h3>
-                <div class="timeline-org">St. Francis Institute of Technology, Mumbai</div>
-              </div>
-              <div class="timeline-date">Dec 2022</div>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Developed a secure user login portal that increased user engagement by 20%.</li>
-              <li>Collaborated with 150+ peers on emerging technology workshops.</li>
-            </ul>
-          </article>
-          <article class="timeline-item fade">
-            <div class="timeline-card card">
-              <div class="timeline-top">
-                <div>
-                  <div class="timeline-title">BE Computer Engineering</div>
-                  <div class="timeline-org">St. Francis Institute of Technology, Mumbai</div>
-                </div>
-                <div class="timeline-date">Jan 2020 - Jun 2024</div>
-              </div>
-              <ul class="timeline-list">
-                <li>Graduated with First Class, CGPA 7.62 / 10.</li>
-                <li>Studied data structures, DBMS, operating systems, networks, and software engineering.</li>
-                <li>Final year project focused on machine learning for cyber attack detection.</li>
+                <li>Delivered BI and analytics solutions for a Dubai-based client, supporting sales performance tracking, operational reporting and business decision-making across a one-year engagement.</li>
+                <li>Built 5 Power BI dashboards backed by Microsoft Fabric pipelines, giving business teams real-time visibility into client sales performance.</li>
+                <li>Replaced fragmented, manually compiled reports with live dashboards that became the primary source of truth for sales decision-making.</li>
+                <li>Eliminated repeated manual reporting cycles, reducing analyst reporting overhead and enabling product and operations teams to act on live data.</li>
+                <li>Transformed raw client sales and operational datasets into structured BI-ready models, improving reporting consistency, data accuracy and stakeholder confidence in business metrics.</li>
               </ul>
             </div>
           </article>
@@ -1148,114 +1152,153 @@
       <div class="container">
         <div class="section-head fade">
           <span class="eyebrow">Projects</span>
-          <h2 class="section-title">Projects that actually support your positioning</h2>
-          <p class="section-subtitle">This section is tighter. Less hype. More evidence.</p>
+          <h2 class="section-title">Projects aligned with backend, applied ML, XAI and full-stack roles.</h2>
+          <p class="section-subtitle">
+            These are written to show what was built, what tools were used, and what the practical outcome was.
+          </p>
         </div>
 
         <div class="projects-grid">
           <article class="project-card card fade">
-            <div class="project-header">
-              <div>
-                <h3 class="project-title">CareSync — Healthcare Navigation App</h3>
-                <div class="project-type">Flutter · FastAPI · Python</div>
-              </div>
-              <span class="project-badge">2026 — Present</span>
-            </div>
-            <p class="project-desc">Cross-platform Flutter app addressing fragmented NHS navigation for patients and unpaid carers. Built modular Android/iOS frontend with FastAPI backend across six modules: waiting-list tracking, appointment/admin support, carer coordination, anonymous feedback with sentiment analysis, analytics dashboard, and digital inclusion mode.</p>
-            <div class="project-tags">
-              <span class="tag">Flutter</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Python</span>
-              <span class="tag">Android/iOS</span>
-              <span class="tag">NHS Compliance</span>
-            </div>
-            <div class="project-result"><strong>Result:</strong> Published to Google Play Internal Testing with zero static analysis issues and a defined NHS compliance roadmap (GDPR, DTAC, DCB0129).</div>
-            <a href="https://github.com/yash1-coder" target="_blank" class="project-link">GitHub</a>
-          </article>
-          <article class="project-card card fade">
             <div class="project-top">
               <div>
-                <div class="project-title">Enterprise Analytics Dashboard</div>
-                <p class="project-desc">Power BI and Microsoft Fabric work delivered during the SoftSensor.ai internship for Protiviti-facing analytics use cases.</p>
+                <div class="project-title">Colouring Black Boxes: Visualisation of AI Decision Making</div>
+                <div class="project-subtitle">Postgraduate Research · University of Leicester</div>
               </div>
-              <div class="project-label">Client work</div>
+              <div class="project-label">Feb 2026 - May 2026</div>
             </div>
+
+            <p class="project-desc">
+              Investigated explainability methods for satellite image classification across CNNs, Vision Transformers
+              and Vision Mamba. Implemented Grad-CAM, Grad-CAM++, Integrated Gradients and SmoothGrad using Python and PyTorch.
+            </p>
+
             <div class="project-stack">
-              <span>Power BI</span><span>Microsoft Fabric</span><span>Python</span><span>EDA</span>
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>XAI</span>
+              <span>Grad-CAM</span>
+              <span>Integrated Gradients</span>
+              <span>Remote Sensing</span>
             </div>
-            <div class="project-result"><strong>Result:</strong> Replaced manual reporting with more reliable analytics delivery for business stakeholders.</div>
-            <div class="project-links">
-              <a class="project-link" href="#experience">See experience section</a>
+
+            <div class="project-result">
+              <strong>Outcome:</strong> Quantified faithfulness, stability and sensitivity metrics with failure-case analysis.
+              Found Vision Transformers achieved the highest satellite imagery accuracy, while Vision Mamba was CPU-constrained
+              but showed strong potential for GPU-scaled remote sensing workloads.
             </div>
           </article>
 
-          <article class="project-card card fade">
-            <div class="project-header">
-              <div>
-                <h3 class="project-title">Colouring Black Boxes — Visualisation of AI Decision Making</h3>
-                <div class="project-type">PGT Research · University of Leicester</div>
-              </div>
-              <span class="project-badge">Feb 2026 — May 2026</span>
-            </div>
-            <p class="project-desc">Dissertation research on interpretability of deep learning models for satellite image classification in safety-critical remote sensing. Implemented and compared Grad-CAM, Grad-CAM++, Integrated Gradients, and SmoothGrad across CNN (ResNet), ViT, and Vision Mamba architectures using Python and PyTorch.</p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">PyTorch</span>
-              <span class="tag">XAI</span>
-              <span class="tag">ResNet</span>
-              <span class="tag">ViT</span>
-              <span class="tag">Vision Mamba</span>
-            </div>
-            <div class="project-result"><strong>Result:</strong> First rigorous ViT vs. Vision Mamba explainability comparison in remote sensing, with findings directly actionable for geospatial AI deployments.</div>
-          </article>
           <article class="project-card card fade">
             <div class="project-top">
               <div>
                 <div class="project-title">Intelligent Defence System: ML for Cyber Attack Detection</div>
-                <p class="project-desc">Built a full-stack Flask and MySQL web application integrating 6 ML models with real-time traffic monitoring and adaptive learning to detect cyber attacks across multiple attack types.</p>
+                <div class="project-subtitle">Cyber-Physical Systems Security Application</div>
               </div>
-              <div class="project-label">ML project</div>
+              <div class="project-label">Sep 2023 - Jun 2024</div>
             </div>
-            <div class="project-stack">
-              <span>Python</span><span>scikit-learn</span><span>Cybersecurity</span><span>Model evaluation</span>
-            </div>
-            <div class="project-result"><strong>Result:</strong> Achieved 85% detection accuracy with demonstrated scalability to previously unseen threat patterns.</div>
-            <div class="project-links">
-              <a class="project-link" href="https://github.com/yash1-coder/Intelligent-defence-system" target="_blank">GitHub</a>
-            </div>
-          </article>
 
-          <article class="project-card card fade">
-            <div class="project-top">
-              <div>
-                <div class="project-title">Smart Health Backend API</div>
-                <p class="project-desc">Backend API for health monitoring workflows with structured endpoints and data handling for patient and wearable scenarios.</p>
-              </div>
-              <div class="project-label">Backend</div>
-            </div>
-            <div class="project-stack">
-              <span>Python</span><span>Flask</span><span>REST API</span><span>Healthcare</span>
-            </div>
-            <div class="project-result"><strong>Result:</strong> Showed API design, application structure, and practical backend implementation.</div>
-            <div class="project-links">
-              <a class="project-link" href="https://github.com/yash1-coder/smart-health-backend" target="_blank">GitHub</a>
-            </div>
-          </article>
+            <p class="project-desc">
+              Built an adaptive ML-based cyber-attack detection system for cyber-physical systems where traditional
+              rule-based security methods were insufficient. Developed a Flask and MySQL web application with real-time
+              traffic monitoring and attack-pattern classification.
+            </p>
 
-          <article class="project-card card fade">
-            <div class="project-top">
-              <div>
-                <div class="project-title">E-commerce Platform with AI Chatbot</div>
-                <p class="project-desc">Designed and built a full-stack e-commerce platform using React.js and Node.js with a secure payment gateway and an AI chatbot for real-time customer assistance.</p>
-              </div>
-              <div class="project-label">Web app</div>
-            </div>
             <div class="project-stack">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI chatbot</span>
+              <span>Python</span>
+              <span>Flask</span>
+              <span>MySQL</span>
+              <span>Machine Learning</span>
+              <span>Cybersecurity</span>
+              <span>Model Evaluation</span>
             </div>
-            <div class="project-result"><strong>Result:</strong> Improved platform security by 25% and boosted overall user satisfaction by 35% through seamless navigation and intelligent support.</div>
+
+            <div class="project-result">
+              <strong>Outcome:</strong> Evaluated 6 machine learning algorithms sequentially and achieved 85% detection
+              accuracy for novel threat patterns with demonstrated scalability to previously unseen attack types.
+            </div>
+
             <div class="project-links">
               <a class="project-link" href="https://github.com/yash1-coder" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card card fade">
+            <div class="project-top">
+              <div>
+                <div class="project-title">E-Commerce Website for Clothing with Integrated AI Chatbot</div>
+                <div class="project-subtitle">Full-Stack Retail Platform</div>
+              </div>
+              <div class="project-label">Jun 2022 - Sep 2023</div>
+            </div>
+
+            <p class="project-desc">
+              Designed and built a full-stack clothing e-commerce platform using React.js and Node.js with secure payment
+              gateway integration. Integrated an AI chatbot to provide real-time customer assistance and improve the
+              end-to-end shopping experience.
+            </p>
+
+            <div class="project-stack">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Firebase</span>
+              <span>JavaScript</span>
+              <span>AI Chatbot</span>
+              <span>E-Commerce</span>
+            </div>
+
+            <div class="project-result">
+              <strong>Outcome:</strong> Improved platform security by 25% and increased overall user satisfaction by 35%.
+              Keep this claim only if you can support it with a report, testing record or project documentation.
+            </div>
+
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/yash1-coder" target="_blank">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head fade">
+          <span class="eyebrow">Education</span>
+          <h2 class="section-title">Academic background.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item fade">
+            <div class="timeline-card card">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-title">MSc Advanced Computer Science</div>
+                  <div class="timeline-org">University of Leicester · United Kingdom</div>
+                </div>
+                <div class="timeline-date">Jan 2025 - Jul 2026</div>
+              </div>
+
+              <ul class="timeline-list">
+                <li>Postgraduate study focused on advanced computing, applied AI/ML, backend systems and research-led software development.</li>
+                <li>Postgraduate research project: Colouring Black Boxes, focused on visualisation of AI decision-making for satellite image classification.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item fade">
+            <div class="timeline-card card">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-title">B.E. Computer Engineering · First Class</div>
+                  <div class="timeline-org">St. Francis Institute of Technology, Mumbai University · India</div>
+                </div>
+                <div class="timeline-date">Jan 2020 - Jun 2024</div>
+              </div>
+
+              <ul class="timeline-list">
+                <li>Graduated with CGPA 7.62 / 10.</li>
+                <li>Built a final-year machine learning project focused on cyber-attack detection for cyber-physical systems.</li>
+              </ul>
             </div>
           </article>
         </div>
@@ -1265,28 +1308,35 @@
     <section class="section" id="certifications">
       <div class="container">
         <div class="section-head fade">
-          <span class="eyebrow">Certifications</span>
-          <h2 class="section-title">Condensed and credible</h2>
-          <p class="section-subtitle">The old section was overloaded. This version keeps the signal and kills the bloat.</p>
+          <span class="eyebrow">Certifications and Activities</span>
+          <h2 class="section-title">Additional proof of technical and leadership work.</h2>
         </div>
 
         <div class="cert-grid">
           <div class="cert-card card fade">
             <h3>HackerRank Certifications</h3>
-            <p>Software Engineer | JavaScript (Intermediate) | Problem Solving (Basic) | Python | React | REST API (Intermediate) | Node.js (Basic)</p>
+            <p>
+              Software Engineer, JavaScript Intermediate, Problem Solving Basic, Python, React,
+              REST API Intermediate and Node.js Basic.
+            </p>
             <div class="cert-meta">2025</div>
           </div>
 
           <div class="cert-card card fade">
-            <h3>Extracurricular Activities</h3>
-            <p>Rekindle, SFITAA Mumbai (2023): Led 50+ volunteers for an alumni event with 500+ participants. Community Work: Led a 200+ sapling plantation drive, conducted 5 technical workshops for 100+ students.</p>
-            <div class="cert-meta">2025</div>
+            <h3>Rekindle, SFIT Alumni Association</h3>
+            <p>
+              Led 50+ volunteers for an alumni event with 500+ participants.
+            </p>
+            <div class="cert-meta">2023</div>
           </div>
 
           <div class="cert-card card fade">
-            <h3>Other Credentials</h3>
-            <p>Python for Everybody, Data Science with Python, Azure Fundamentals, and Machine Learning Specialization.</p>
-            <div class="cert-meta">Ongoing professional development</div>
+            <h3>Community Work</h3>
+            <p>
+              Led a 200+ sapling plantation drive, conducted 5 technical workshops for 100+ students,
+              and supported women entrepreneurship training for 10 micro-enterprises.
+            </p>
+            <div class="cert-meta">Leadership and volunteering</div>
           </div>
         </div>
       </div>
@@ -1297,17 +1347,23 @@
         <div class="contact-card card fade">
           <div class="contact-copy">
             <span class="eyebrow">Contact</span>
-            <h2 class="section-title" style="margin-bottom: 0.8rem;">Letâs talk about the role</h2>
+            <h2 class="section-title" style="margin-bottom: 0.8rem;">Let’s talk about the role.</h2>
+
             <p>
-              I am looking for data science, analytics, and machine learning opportunities in the UK. If the role needs Python, BI reporting, experimentation, or ML pipelines, I am interested.
+              I am looking for graduate and entry-level opportunities in software engineering, backend development,
+              data science and applied AI/ML. The best-fit roles involve Python, APIs, BI dashboards, ML pipelines,
+              data products or full-stack application development.
             </p>
+
             <a class="email" href="mailto:yashchourasia1111@gmail.com">yashchourasia1111@gmail.com</a>
           </div>
+
           <div class="contact-actions">
-            <a class="primary" href="mailto:yashchourasia1111@gmail.com">Email me</a>
-            <a href="https://linkedin.com/in/yashchourasia-cs" target="_blank">LinkedIn</a>
-            <a href="https://github.com/yash1-coder" target="_blank">GitHub</a>
-            <a href="https://yash1-coder.github.io/portfolio" target="_blank">Current portfolio</a>
+            <a class="primary" href="mailto:yashchourasia1111@gmail.com">Email Me</a>
+            <a href="tel:+447425748404">Call</a>
+            <a href="https://www.linkedin.com/in/yashchourasia-cs/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yash1-coder/yash1-coder" target="_blank">GitHub</a>
+            <a href="Yash-Chourasia-CV.pdf" target="_blank">Download CV</a>
           </div>
         </div>
       </div>
@@ -1317,9 +1373,11 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <p>Yash Chourasia | Data Scientist & ML Engineer</p>
+        <p>Yash Chourasia | Applied ML Engineer & Backend Developer</p>
+
         <div class="footer-links">
           <a href="#about">About</a>
+          <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
@@ -1330,20 +1388,21 @@
   <script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
+        if (entry.isIntersecting) entry.target.classList.add("visible");
       });
     }, { threshold: 0.12 });
 
-    document.querySelectorAll('.fade').forEach((el) => observer.observe(el));
+    document.querySelectorAll(".fade").forEach((el) => observer.observe(el));
 
-    window.addEventListener('scroll', () => {
-      let current = '';
-      document.querySelectorAll('section[id]').forEach((section) => {
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      document.querySelectorAll("section[id]").forEach((section) => {
         if (window.scrollY >= section.offsetTop - 120) current = section.id;
       });
 
-      document.querySelectorAll('.nav-links a').forEach((link) => {
-        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + current);
       });
     });
   </script>
