@@ -1,0 +1,192 @@
+{
+ "resnet_Residential": {
+  "file": "xai/resnet-residential.webp",
+  "w": 1600,
+  "h": 404
+ },
+ "resnet_River": {
+  "file": "xai/resnet-river.webp",
+  "w": 1600,
+  "h": 404
+ },
+ "resnet_SeaLake": {
+  "file": "xai/resnet-sealake.webp",
+  "w": 1600,
+  "h": 404
+ },
+ "resnet_Highway": {
+  "file": "xai/resnet-highway.webp",
+  "w": 1600,
+  "h": 404
+ },
+ "resnet_Industrial": {
+  "file": "xai/resnet-industrial.webp",
+  "w": 1600,
+  "h": 404
+ },
+ "vit_0": {
+  "file": "xai/vit-sample-0.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "vit_1": {
+  "file": "xai/vit-sample-1.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "vit_2": {
+  "file": "xai/vit-sample-2.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "vit_3": {
+  "file": "xai/vit-sample-3.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "vit_4": {
+  "file": "xai/vit-sample-4.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "vim_PermanentCrop": {
+  "file": "xai/vim-permanentcrop.webp",
+  "w": 1600,
+  "h": 397
+ },
+ "vim_SeaLake": {
+  "file": "xai/vim-sealake.webp",
+  "w": 1600,
+  "h": 397
+ },
+ "vim_Industrial": {
+  "file": "xai/vim-industrial.webp",
+  "w": 1600,
+  "h": 397
+ },
+ "vim_Highway": {
+  "file": "xai/vim-highway.webp",
+  "w": 1600,
+  "h": 397
+ },
+ "vim_AnnualCrop": {
+  "file": "xai/vim-annualcrop.webp",
+  "w": 1600,
+  "h": 397
+ },
+ "fail_resnet_0": {
+  "file": "xai/fail-resnet-0.webp",
+  "w": 1600,
+  "h": 410
+ },
+ "fail_vit_0": {
+  "file": "xai/fail-vit-0.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "fail_vim_0": {
+  "file": "xai/fail-vim-0.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "fail_resnet_1": {
+  "file": "xai/fail-resnet-1.webp",
+  "w": 1600,
+  "h": 410
+ },
+ "fail_vit_1": {
+  "file": "xai/fail-vit-1.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "fail_vim_1": {
+  "file": "xai/fail-vim-1.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "fail_resnet_2": {
+  "file": "xai/fail-resnet-2.webp",
+  "w": 1600,
+  "h": 410
+ },
+ "fail_vit_2": {
+  "file": "xai/fail-vit-2.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "fail_vim_2": {
+  "file": "xai/fail-vim-2.webp",
+  "w": 1600,
+  "h": 417
+ },
+ "cm-resnet18": {
+  "file": "xai/cm-resnet18.webp",
+  "w": 1800,
+  "h": 719
+ },
+ "cm-vit": {
+  "file": "xai/cm-vit.webp",
+  "w": 1800,
+  "h": 753
+ },
+ "cm-vim": {
+  "file": "xai/cm-vim.webp",
+  "w": 1800,
+  "h": 766
+ },
+ "curves-resnet18": {
+  "file": "xai/curves-resnet18.webp",
+  "w": 1800,
+  "h": 440
+ },
+ "curves-vit": {
+  "file": "xai/curves-vit.webp",
+  "w": 1800,
+  "h": 440
+ },
+ "curves-vim": {
+  "file": "xai/curves-vim.webp",
+  "w": 1800,
+  "h": 440
+ },
+ "eurosat_AnnualCrop": {
+  "file": "eurosat/annualcrop.webp",
+  "src": "AnnualCrop_1.jpg"
+ },
+ "eurosat_Forest": {
+  "file": "eurosat/forest.webp",
+  "src": "Forest_1.jpg"
+ },
+ "eurosat_HerbaceousVegetation": {
+  "file": "eurosat/herbaceousvegetation.webp",
+  "src": "HerbaceousVegetation_1.jpg"
+ },
+ "eurosat_Highway": {
+  "file": "eurosat/highway.webp",
+  "src": "Highway_1.jpg"
+ },
+ "eurosat_Industrial": {
+  "file": "eurosat/industrial.webp",
+  "src": "Industrial_1.jpg"
+ },
+ "eurosat_Pasture": {
+  "file": "eurosat/pasture.webp",
+  "src": "Pasture_1.jpg"
+ },
+ "eurosat_PermanentCrop": {
+  "file": "eurosat/permanentcrop.webp",
+  "src": "PermanentCrop_1.jpg"
+ },
+ "eurosat_Residential": {
+  "file": "eurosat/residential.webp",
+  "src": "Residential_1.jpg"
+ },
+ "eurosat_River": {
+  "file": "eurosat/river.webp",
+  "src": "River_1.jpg"
+ },
+ "eurosat_SeaLake": {
+  "file": "eurosat/sealake.webp",
+  "src": "SeaLake_1.jpg"
+ }
+}
